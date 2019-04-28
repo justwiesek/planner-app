@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toDo list app</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+</head>
+<body>
+   
+   <header class="main-header">
+      <div class="next-header">
+           <input type="text" placeholder="Enter your tasks for today ..." id="item">
+           <button id="add"><i class="fas fa-plus"></i></button>
+       </div>
+   </header>
+   
+   <div class="container">
+      <div class="wrap">
+        <!--   uncompleted tasks   -->
+       <ul class="todo" id="todo">
+<!--
+           <li>
+               <div class="buttons">
+                   <button class="remove"><i class="far fa-trash-alt"></i></button>
+                   <button class="complete"><i class="fas fa-check"></i></button>
+               </div>
+           </li>
+-->
+      </ul>
+       
+        <!--  completed tasks     -->
+       
+       <ul class="todo" id="completed"></ul>  
+       
+       </div>
+   </div>
+    
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

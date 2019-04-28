@@ -1,0 +1,235 @@
+body, input, button {
+    font-family: 'Signika', sans-serif;
+}
+
+body {
+    background: #edf0f1;
+    padding: 80px 0 0 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main-header {
+    height: 80px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: darkcyan;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    -webkit-box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
+    box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
+} 
+.next-header {
+    padding: 15px;
+}
+
+header input {
+    width: 100%;
+    height: 50px;
+    float: left;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-indent: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    
+    -webkit-appearance: none;
+    
+    -moz-appearance: none;
+    
+    appearance: none;
+}
+
+header input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+header input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+header button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 16px;
+    right: 14px;
+    z-index: 2;
+    border-radius: 25px;   
+    cursor: pointer;
+}
+
+header button i  {
+    width: 10px;
+    height: 10px;
+    color: darkcyan;
+    font-size: 20px;
+    position: absolute;
+    top: 29%;
+    left: 33%;
+}
+
+.container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+}
+
+.wrap {
+    padding: 15px;
+    width: 100vw;
+}
+
+ul.todo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.todo li {
+    width: 100%;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    line-height: 22px;
+    
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    -webkit-box-shadow: 0 2px 2px rgba(44, 62, 80, 0.10);
+    box-shadow: 0 2px 2px rgba(44, 62, 80, 0.10);
+    margin: 0 0 10px 0;
+    padding: 14px 100px 14px 14px;
+    
+}
+
+ul.todo li:last-child {
+    margin: 0;
+}
+
+ul.todo li .buttons {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+ul.todo li .buttons button {
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: none;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    position: relative; 
+    cursor: pointer;
+}
+
+ul.todo li .buttons button:last-of-type:before {
+    content: '';
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: #edf0f1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.buttons i {
+    font-size: 12px;
+    margin: 0 0 0 -10px;
+}
+
+.buttons .fa-trash-alt {
+    color: #c0cecb;
+    font-size: 20px;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+}
+.buttons .fa-check {
+    color: #25b99a;
+}
+
+.buttons .fa-check {
+    border-radius: 18px;
+    border: 1.5px solid #25b99a;
+    padding: 7px;
+    position: absolute;
+    top: 44%;
+    left: 45%;
+}
+
+#completed .complete .fas {
+    background: #25b99a;
+    color: #fff;
+}
+
+.buttons i:hover {
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+
+.buttons .fa-trash-alt:hover {
+    color: #e85656;
+}
+
+.buttons .fa-check:hover {
+    background: #25b99a;
+    color: #fff;
+}
+
+#completed:not(:empty) {
+    position: relative;
+    padding: 60px 0 0 0;
+}
+
+#completed:not(:empty):before {
+    content: '';
+    width: 150px;
+    height: 2px;
+    background: #c0cecb;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin: 0 0 0 -75px;
+}
